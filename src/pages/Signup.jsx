@@ -18,7 +18,6 @@ function Signup() {
         password: "",
         phone: "",
         city: "",
-        city: "",
         bloodGroup: "",
         gender: "",
     });
