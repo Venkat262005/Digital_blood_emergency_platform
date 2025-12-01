@@ -31,8 +31,8 @@ Your browser is likely caching the old version of the application.
 4. Refresh the page
 
 ## Verified Working URLs:
-- **Frontend**: [http://localhost:5173 ✅](https://digital-blood-emergency-platform.onrender.com)
-- **Backend**: [http://localhost:5001 ✅](https://digital-blood-emergency-platform.onrender.com)
+- **Frontend**: (https://digital-blood-emergency-platform.onrender.com)
+- **Backend**:  (https://digital-blood-emergency-platform.onrender.com)
 
 ## Test Accounts:
 - **Donor**: venu@gmail.com / 123456
