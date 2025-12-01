@@ -22,7 +22,7 @@ export function AuthProvider({ children }) {
     if (!email || !password) throw new Error("Email and password required");
 
     // Fetch users from mock DB
-    const res = await fetch("http://localhost:5001/users");
+    const res = await fetch("https://digital-blood-emergency-platform.onrender.com/users");
     const users = await res.json();
 
     const found = users.find(u => u.email === email && u.password === password);
@@ -38,7 +38,7 @@ export function AuthProvider({ children }) {
 
   const signup = async (data) => {
     // Check if email exists
-    const res = await fetch("http://localhost:5001/users");
+    const res = await fetch("https://digital-blood-emergency-platform.onrender.com/users");
     const users = await res.json();
     if (users.find(u => u.email === data.email)) {
       throw new Error("Email already exists");
@@ -50,7 +50,7 @@ export function AuthProvider({ children }) {
       id: String(Date.now()) // Simple ID generation
     };
 
-    await fetch("http://localhost:5001/users", {
+    await fetch("https://digital-blood-emergency-platform.onrender.com/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newUser)
@@ -70,7 +70,7 @@ export function AuthProvider({ children }) {
         lastDonationDate: "",
         notes: ""
       };
-      const donorRes = await fetch("http://localhost:5001/donors", {
+      const donorRes = await fetch("https://digital-blood-emergency-platform.onrender.com/donors", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(donorProfile)
@@ -79,7 +79,7 @@ export function AuthProvider({ children }) {
 
       // Check for missed SOS notifications
       try {
-        await fetch("http://localhost:5001/check-missed-notifications", {
+        await fetch("https://digital-blood-emergency-platform.onrender.com/check-missed-notifications", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ donorId: donorData.id })

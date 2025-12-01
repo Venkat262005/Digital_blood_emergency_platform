@@ -21,7 +21,7 @@ function ForgotPassword() {
 
         try {
             // Check if user exists
-            const res = await fetch("http://localhost:5001/users");
+            const res = await fetch("https://digital-blood-emergency-platform.onrender.com/users");
             const users = await res.json();
             const user = users.find((u) => u.email === email);
 
@@ -36,7 +36,7 @@ function ForgotPassword() {
             setGeneratedOtp(newOtp);
 
             // Send OTP via Email
-            const emailRes = await fetch("http://localhost:5001/send-otp", {
+            const emailRes = await fetch("https://digital-blood-emergency-platform.onrender.com/send-otp", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, otp: newOtp }),
@@ -70,12 +70,12 @@ function ForgotPassword() {
         setLoading(true);
         try {
             // Find user again to get ID
-            const res = await fetch("http://localhost:5001/users");
+            const res = await fetch("https://digital-blood-emergency-platform.onrender.com/users");
             const users = await res.json();
             const user = users.find((u) => u.email === email);
 
             // Update password
-            await fetch(`http://localhost:5001/users/${user.id}`, {
+            await fetch(`https://digital-blood-emergency-platform.onrender.com/users/${user.id}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ password: newPassword }),

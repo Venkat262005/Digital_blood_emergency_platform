@@ -170,7 +170,7 @@ function ReceiverDashboard() {
 
     const handleConfirmDonation = async (requestId, donorId) => {
         try {
-            await fetch('http://localhost:5001/confirm-donation', {
+            await fetch('https://digital-blood-emergency-platform.onrender.com/confirm-donation', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ requestId, donorId })
@@ -215,7 +215,7 @@ function ReceiverDashboard() {
 
             for (const response of donatedResponses) {
                 try {
-                    await fetch('http://localhost:5001/award-points', {
+                    await fetch('https://digital-blood-emergency-platform.onrender.com/award-points', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({

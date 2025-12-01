@@ -21,7 +21,7 @@ Your browser is likely caching the old version of the application.
 
 ### Solution 3: Use Incognito/Private Window
 - Open a new Incognito/Private window
-- Navigate to: http://localhost:5173
+- Navigate to: https://digital-blood-emergency-platform.onrender.com
 - Login and test
 
 ### Solution 4: Clear Site Data
@@ -31,8 +31,8 @@ Your browser is likely caching the old version of the application.
 4. Refresh the page
 
 ## Verified Working URLs:
-- **Frontend**: http://localhost:5173 ✅
-- **Backend**: http://localhost:5001 ✅
+- **Frontend**: [http://localhost:5173 ✅](https://digital-blood-emergency-platform.onrender.com)
+- **Backend**: [http://localhost:5001 ✅](https://digital-blood-emergency-platform.onrender.com)
 
 ## Test Accounts:
 - **Donor**: venu@gmail.com / 123456

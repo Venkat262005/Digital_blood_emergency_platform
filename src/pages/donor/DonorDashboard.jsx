@@ -121,7 +121,7 @@ function DonorDashboard() {
         formData.append('donorId', donorProfile.id);
 
         try {
-            const res = await fetch('http://localhost:5001/upload-report', {
+            const res = await fetch('https://digital-blood-emergency-platform.onrender.com/upload-report', {
                 method: 'POST',
                 body: formData
             });

@@ -24,21 +24,21 @@ echo ""
 
 # Check API endpoints
 echo "2. Checking API endpoints..."
-if curl -s http://localhost:5001/users > /dev/null; then
+if curl -s https://digital-blood-emergency-platform.onrender.com/users > /dev/null; then
     echo "   ✓ /users endpoint is accessible"
 else
     echo "   ✗ /users endpoint failed"
     exit 1
 fi
 
-if curl -s http://localhost:5001/donors > /dev/null; then
+if curl -s https://digital-blood-emergency-platform.onrender.com/donors > /dev/null; then
     echo "   ✓ /donors endpoint is accessible"
 else
     echo "   ✗ /donors endpoint failed"
     exit 1
 fi
 
-if curl -s http://localhost:5001/requests > /dev/null; then
+if curl -s https://digital-blood-emergency-platform.onrender.com/requests > /dev/null; then
     echo "   ✓ /requests endpoint is accessible"
 else
     echo "   ✗ /requests endpoint failed"
@@ -49,9 +49,9 @@ echo ""
 
 # Check database integrity
 echo "3. Checking database integrity..."
-USER_COUNT=$(curl -s http://localhost:5001/users | jq 'length')
-DONOR_COUNT=$(curl -s http://localhost:5001/donors | jq 'length')
-REQUEST_COUNT=$(curl -s http://localhost:5001/requests | jq 'length')
+USER_COUNT=$(curl -s https://digital-blood-emergency-platform.onrender.com/users | jq 'length')
+DONOR_COUNT=$(curl -s https://digital-blood-emergency-platform.onrender.com/donors | jq 'length')
+REQUEST_COUNT=$(curl -s https://digital-blood-emergency-platform.onrender.com/requests | jq 'length')
 
 echo "   - Users: $USER_COUNT"
 echo "   - Donors: $DONOR_COUNT"
@@ -60,7 +60,7 @@ echo "   - Requests: $REQUEST_COUNT"
 # Check if venu's donor profile has all required fields
 echo ""
 echo "4. Checking donor profile completeness..."
-VENU_PROFILE=$(curl -s http://localhost:5001/donors | jq '.[] | select(.name == "venu")')
+VENU_PROFILE=$(curl -s https://digital-blood-emergency-platform.onrender.com/donors | jq '.[] | select(.name == "venu")')
 
 if echo "$VENU_PROFILE" | jq -e '.userId' > /dev/null; then
     echo "   ✓ userId field present"
@@ -112,8 +112,8 @@ done
 echo ""
 echo "=== Health Check Complete ==="
 echo ""
-echo "Frontend: http://localhost:5174"
-echo "Backend API: http://localhost:5001"
+echo "Frontend: https://digital-blood-emergency-platform.onrender.com"
+echo "Backend API: https://digital-blood-emergency-platform.onrender.com"
 echo ""
 echo "Test Accounts:"
 echo "  Donor: venu@gmail.com / 123456"

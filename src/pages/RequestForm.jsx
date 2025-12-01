@@ -82,7 +82,7 @@ function RequestForm({ mode }) {
 
         // Trigger Alert
         try {
-          await fetch("http://localhost:5001/send-sos-alert", {
+          await fetch("https://digital-blood-emergency-platform.onrender.com/send-sos-alert", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ requestData: { ...formData, id: res.data.id } }),

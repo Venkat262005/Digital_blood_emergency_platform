@@ -62,7 +62,7 @@ const sendSOSAlert = async (email, donorName, requestDetails) => {
         </div>
 
         <p style="text-align: center;">
-          <a href="http://localhost:5173/login" style="background-color: ${headerColor}; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">View Request</a>
+          <a href="https://digital-blood-emergency-platform.onrender.com/login" style="background-color: ${headerColor}; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">View Request</a>
         </p>
       </div>
     `,
@@ -99,7 +99,7 @@ const sendDonorRequest = async (email, donorName, requestDetails) => {
         </div>
 
         <p style="text-align: center;">
-          <a href="http://localhost:5173/login" style="background-color: #dc2626; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">View Request</a>
+          <a href="https://digital-blood-emergency-platform.onrender.com/login" style="background-color: #dc2626; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">View Request</a>
         </p>
       </div>
     `,
