@@ -1,0 +1,523 @@
+{
+  "users": [
+    {
+      "name": "Test Donor",
+      "email": "testdonor@example.com",
+      "password": "password123",
+      "role": "donor",
+      "id": "1"
+    },
+    {
+      "name": "Venkat Ketharajupalli",
+      "email": "venkatketharajupalli87@gmail.com",
+      "password": "1234567",
+      "phone": "+918247233095",
+      "city": "Mangalagiri",
+      "bloodGroup": "AB+",
+      "role": "donor",
+      "id": "1764485065268"
+    },
+    {
+      "name": "umesh",
+      "email": "umesh@gmail.com",
+      "password": "umesh12",
+      "phone": "6302483665",
+      "city": "kurnool",
+      "bloodGroup": "",
+      "role": "receiver",
+      "id": "1764485453535",
+      "gender": "Male"
+    },
+    {
+      "name": "Venkat Ketharajupalli",
+      "email": "venkat@gmail.com",
+      "password": "123456",
+      "phone": "+918247233095",
+      "city": "Hyderabad",
+      "bloodGroup": "B+",
+      "gender": "Male",
+      "role": "donor",
+      "id": "1764486635338"
+    },
+    {
+      "name": "venu",
+      "email": "venu@gmail.com",
+      "password": "123456",
+      "phone": "6302483664",
+      "city": "kurnool",
+      "bloodGroup": "B+",
+      "gender": "Male",
+      "role": "donor",
+      "id": "1764487251818"
+    },
+    {
+      "name": "venkatchemi",
+      "email": "chemi@gmail.com",
+      "password": "123456",
+      "phone": "82683617131",
+      "city": "Mangalagiri",
+      "bloodGroup": "",
+      "gender": "Male",
+      "role": "receiver",
+      "id": "1764490100480"
+    },
+    {
+      "name": "Akhil ",
+      "email": "akhil@gmail.com",
+      "password": "akhil",
+      "phone": "8715615123",
+      "city": "Suryapet",
+      "bloodGroup": "B+",
+      "gender": "Male",
+      "role": "donor",
+      "id": "1764493442599"
+    },
+    {
+      "name": "Kamal",
+      "email": "kamal@gmail.com",
+      "password": "123456",
+      "phone": "8362971717",
+      "city": "Hyderabad",
+      "bloodGroup": "B+",
+      "gender": "Male",
+      "role": "donor",
+      "id": "1764497717477"
+    },
+    {
+      "name": "Jhon",
+      "email": "jhon@gmail.com",
+      "password": "123456",
+      "phone": "6863271618",
+      "city": "Hyderabad",
+      "bloodGroup": "AB-",
+      "gender": "Male",
+      "role": "donor",
+      "id": "1764506261409"
+    },
+    {
+      "name": "smith",
+      "email": "smith@gmail.com",
+      "password": "123456",
+      "phone": "6726816181",
+      "city": "Suryapet",
+      "bloodGroup": "",
+      "gender": "Male",
+      "role": "receiver",
+      "id": "1764506303080"
+    },
+    {
+      "name": "smith",
+      "email": "smith12@gmail.com",
+      "password": "1234567",
+      "phone": "82682611916",
+      "city": "Guntur",
+      "bloodGroup": "AB+",
+      "gender": "Male",
+      "role": "donor",
+      "id": "1764509824312"
+    },
+    {
+      "name": "steve",
+      "email": "steve@gmail.com",
+      "password": "123456",
+      "phone": "",
+      "city": "",
+      "bloodGroup": "",
+      "gender": "",
+      "role": "receiver",
+      "id": "1764509861306"
+    }
+  ],
+  "donors": [
+    {
+      "userId": "1764485065268",
+      "name": "Venkat Ketharajupalli",
+      "bloodGroup": "AB+",
+      "phone": "+918247233095",
+      "city": "Mangalagiri",
+      "gender": "Male",
+      "availabilityStatus": "Available",
+      "eligibilityStatus": "Eligible",
+      "lastDonationDate": "2025-11-30",
+      "notes": "",
+      "reportUrl": "http://localhost:5001/uploads/report-1764485424459-21910431.pdf",
+      "isVerified": true,
+      "points": 240,
+      "donationCount": 4,
+      "id": 1
+    },
+    {
+      "userId": "1764486635338",
+      "name": "Venkat Ketharajupalli",
+      "bloodGroup": "B+",
+      "phone": "+918247233095",
+      "city": "Hyderabad",
+      "availabilityStatus": "Unavailable",
+      "lastDonationDate": "2025-11-30",
+      "notes": "",
+      "id": 2,
+      "reportUrl": "http://localhost:5001/uploads/report-1764496912420-976521539.pdf",
+      "eligibilityStatus": "Eligible",
+      "isVerified": true,
+      "points": 60,
+      "nextEligibleDate": "2026-03-02",
+      "donationCount": 1,
+      "distance": "Infinity"
+    },
+    {
+      "userId": "1764487251818",
+      "name": "venu",
+      "bloodGroup": "B+",
+      "phone": "6302483664",
+      "city": "kurnool",
+      "gender": "Male",
+      "availabilityStatus": "Available",
+      "eligibilityStatus": "Eligible",
+      "lastDonationDate": "",
+      "notes": "",
+      "id": 3,
+      "distance": "Infinity"
+    },
+    {
+      "userId": "1764493442599",
+      "name": "Akhil ",
+      "bloodGroup": "B+",
+      "phone": "8715615123",
+      "city": "Suryapet",
+      "gender": "Male",
+      "availabilityStatus": "Unavailable",
+      "eligibilityStatus": "Not Eligible",
+      "lastDonationDate": "2025-11-30",
+      "notes": "",
+      "id": 4,
+      "points": 60,
+      "nextEligibleDate": "2026-03-02",
+      "donationCount": 1
+    },
+    {
+      "userId": "1764497717477",
+      "name": "Kamal",
+      "bloodGroup": "B+",
+      "phone": "8362971717",
+      "city": "Hyderabad",
+      "gender": "Male",
+      "availabilityStatus": "Available",
+      "eligibilityStatus": "Eligible",
+      "lastDonationDate": "",
+      "notes": "",
+      "id": 5
+    },
+    {
+      "userId": "1764506261409",
+      "name": "Jhon",
+      "bloodGroup": "AB-",
+      "phone": "6863271618",
+      "city": "Hyderabad",
+      "gender": "Male",
+      "availabilityStatus": "Unavailable",
+      "eligibilityStatus": "Not Eligible",
+      "lastDonationDate": "2025-11-30",
+      "notes": "",
+      "id": 6,
+      "points": 50,
+      "nextEligibleDate": "2026-03-02"
+    },
+    {
+      "userId": "1764509824312",
+      "name": "smith",
+      "bloodGroup": "AB+",
+      "phone": "82682611916",
+      "city": "Guntur",
+      "gender": "Male",
+      "availabilityStatus": "Unavailable",
+      "eligibilityStatus": "Not Eligible",
+      "lastDonationDate": "2025-11-30",
+      "notes": "",
+      "id": 7,
+      "points": 60,
+      "nextEligibleDate": "2026-03-02",
+      "donationCount": 1
+    }
+  ],
+  "requests": [
+    {
+      "patientName": "Musi",
+      "unitsRequired": "11",
+      "hospital": "AIIMS MANGALAGIRI",
+      "hospitalAddress": "MAGALAGIRI",
+      "bedNumber": "Genaral Ward -1",
+      "city": "MANGALAGIRI",
+      "contactNumber": "9123456780",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "AB+",
+      "userId": "1764485453535",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 1,
+      "targetDonorName": "Venkat Ketharajupalli",
+      "id": 1,
+      "responses": [
+        {
+          "donorId": 1,
+          "donorName": "Venkat Ketharajupalli",
+          "donorPhone": "+918247233095",
+          "status": "Donated",
+          "timestamp": "2025-11-30T06:54:32.897Z"
+        }
+      ]
+    },
+    {
+      "patientName": "Musi",
+      "unitsRequired": "11",
+      "hospital": "AIIMS MANGALAGIRI",
+      "hospitalAddress": "MAGALAGIRI",
+      "bedNumber": "Genaral Ward -1",
+      "city": "MANGALAGIRI",
+      "contactNumber": "9123456780",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "AB+",
+      "userId": "1764485453535",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 1,
+      "targetDonorName": "Venkat Ketharajupalli",
+      "id": 2,
+      "responses": [
+        {
+          "donorId": 1,
+          "donorName": "Venkat Ketharajupalli",
+          "donorPhone": "+918247233095",
+          "status": "Donated",
+          "timestamp": "2025-11-30T06:54:35.030Z"
+        }
+      ]
+    },
+    {
+      "patientName": "Meena Reddy",
+      "unitsRequired": "11",
+      "hospital": "NIMS",
+      "hospitalAddress": "Jubilee Hills, Rd No 1",
+      "bedNumber": "Genaral Ward -1",
+      "city": "Hyderabad",
+      "contactNumber": "6815171519",
+      "urgency": "High",
+      "isSOS": true,
+      "notes": "",
+      "bloodGroup": "AB+",
+      "userId": "1764485453535",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 1,
+      "targetDonorName": "Venkat Ketharajupalli",
+      "id": 3,
+      "responses": [
+        {
+          "donorId": 1,
+          "donorName": "Venkat Ketharajupalli",
+          "donorPhone": "+918247233095",
+          "status": "Donated",
+          "timestamp": "2025-11-30T07:28:42.125Z"
+        }
+      ]
+    },
+    {
+      "patientName": "Meena Reddy",
+      "unitsRequired": "11",
+      "hospital": "NIMS",
+      "hospitalAddress": "Jubilee Hills, Rd No 1",
+      "bedNumber": "Genaral Ward -1",
+      "city": "Hyderabad",
+      "contactNumber": "6815171519",
+      "urgency": "High",
+      "isSOS": true,
+      "notes": "",
+      "bloodGroup": "B+",
+      "userId": "1764485453535",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 2,
+      "targetDonorName": "Venkat Ketharajupalli",
+      "id": 4,
+      "responses": [
+        {
+          "donorId": 1,
+          "donorName": "Venkat Ketharajupalli",
+          "donorPhone": "+918247233095",
+          "status": "Donated",
+          "timestamp": "2025-11-30T07:28:51.546Z"
+        }
+      ]
+    },
+    {
+      "status": "Cancelled",
+      "id": 1764490179057
+    },
+    {
+      "status": "Cancelled",
+      "id": 1764493611720
+    },
+    {
+      "patientName": "Suresh Kumar",
+      "unitsRequired": "13",
+      "hospital": "AIIMS MANGALAGIRI",
+      "hospitalAddress": "MAGALAGIRI",
+      "bedNumber": "Genaral Ward -1",
+      "city": "MANGALAGIRI",
+      "contactNumber": "6302084030",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "B+",
+      "userId": "1764490100480",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 4,
+      "targetDonorName": "Akhil ",
+      "id": 1764495640606,
+      "responses": [
+        {
+          "donorId": 4,
+          "donorName": "Akhil ",
+          "donorPhone": "8715615123",
+          "status": "Donated",
+          "timestamp": "2025-11-30T09:49:04.628Z"
+        }
+      ]
+    },
+    {
+      "patientName": "Naveen",
+      "unitsRequired": "11",
+      "hospital": "Apollo Hospital",
+      "hospitalAddress": "Apollo Hospital,kphb ",
+      "bedNumber": "Genaral Ward -1",
+      "city": "Hyderabad",
+      "contactNumber": "7272581322",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "B+",
+      "userId": "1764490100480",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 2,
+      "targetDonorName": "Venkat Ketharajupalli",
+      "id": 1764495914015,
+      "responses": [
+        {
+          "donorId": 2,
+          "donorName": "Venkat Ketharajupalli",
+          "donorPhone": "+918247233095",
+          "status": "Donated",
+          "timestamp": "2025-11-30T09:59:31.529Z"
+        }
+      ]
+    },
+    {
+      "patientName": "Naveen Reddy",
+      "bloodGroup": "B+",
+      "unitsRequired": "13",
+      "hospital": "Apollo Hospital",
+      "hospitalAddress": "Apollo Hospital,kphb ",
+      "bedNumber": "ICU-19",
+      "city": "Hyderabad",
+      "contactNumber": "6302084030",
+      "urgency": "High",
+      "isSOS": false,
+      "notes": "urgent requirement ",
+      "latitude": 17.491569,
+      "longitude": 78.397271,
+      "userId": "1764490100480",
+      "status": "Open",
+      "createdAt": "2025-11-30",
+      "id": 1764497602000
+    },
+    {
+      "patientName": "Zaheer",
+      "unitsRequired": "3",
+      "hospital": "Apollo Hospital",
+      "hospitalAddress": "Apollo Hospital,kphb ",
+      "bedNumber": "Genaral Ward -1",
+      "city": "Hyderabad",
+      "contactNumber": "6815171519",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "AB-",
+      "userId": "1764506303080",
+      "status": "Open",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 6,
+      "targetDonorName": "Jhon",
+      "id": 1764506670281,
+      "responses": [
+        {
+          "donorId": 6,
+          "donorName": "Jhon",
+          "donorPhone": "6863271618",
+          "status": "Donated",
+          "timestamp": "2025-11-30T12:45:17.949Z"
+        }
+      ]
+    },
+    {
+      "patientName": "john ",
+      "unitsRequired": "3",
+      "hospital": "AIIMS MANGALAGIRI",
+      "hospitalAddress": "MAGALAGIRI",
+      "bedNumber": "ICU-2",
+      "city": "MANGALAGIRI",
+      "contactNumber": "9278626186",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "AB+",
+      "userId": "1764509861306",
+      "status": "Open",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 1,
+      "targetDonorName": "Venkat Ketharajupalli",
+      "id": 1764509917443,
+      "responses": [
+        {
+          "donorId": 1,
+          "donorName": "Venkat Ketharajupalli",
+          "donorPhone": "+918247233095",
+          "status": "Donated_Pending_Confirmation",
+          "timestamp": "2025-12-01T08:45:16.491Z"
+        }
+      ]
+    },
+    {
+      "patientName": "john ",
+      "unitsRequired": "3",
+      "hospital": "AIIMS MANGALAGIRI",
+      "hospitalAddress": "MAGALAGIRI",
+      "bedNumber": "ICU-2",
+      "city": "MANGALAGIRI",
+      "contactNumber": "9278626186",
+      "urgency": "Medium",
+      "isSOS": false,
+      "notes": "",
+      "bloodGroup": "AB+",
+      "userId": "1764509861306",
+      "status": "Closed",
+      "createdAt": "2025-11-30",
+      "targetDonorId": 7,
+      "targetDonorName": "smith",
+      "id": 1764509920301,
+      "responses": [
+        {
+          "donorId": 7,
+          "donorName": "smith",
+          "donorPhone": "82682611916",
+          "status": "Donated",
+          "timestamp": "2025-11-30T13:41:31.931Z"
+        }
+      ]
+    }
+  ]
+}
