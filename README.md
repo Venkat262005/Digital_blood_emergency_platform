@@ -60,7 +60,7 @@ JSON file (temporary)
 
 📂 Project Setup
 1️⃣ Clone the Repo
-git clone https://github.com/yourusername/emergency-blood-platform.git
+git clone https://github.com/Venkat262005/emergency-blood-platform.git
 cd emergency-blood-platform
 
 2️⃣ Install Dependencies
